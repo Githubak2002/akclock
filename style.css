@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: linear-gradient(45deg rgb(77, 184, 255), rgb(25, 109, 255)    );
+    font-family: 'Shadows Into Light', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(35deg, rgb(98, 177, 255), rgba(80, 57, 255, 0.795),rgba(230, 70, 230, 0.926));
+    
+}
+.clk{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: rgba(255, 255, 255, 0.5);
+    position:relative;
+}
+/* .center{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+} */
+.clk .no{
+    --r : 0;
+    position: absolute ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--r));
+}
+.clk .no1{ --r: 30deg; }
+.clk .no2{ --r: 60deg; }
+.clk .no3{ --r: 90deg; }
+.clk .no4{ --r: 120deg; }
+.clk .no5{ --r: 150deg; }
+.clk .no6{ --r: 180deg; }
+.clk .no7{ --r: 210deg; }
+.clk .no8{ --r: 240deg; }
+.clk .no9{ --r: 270deg; }
+.clk .no10{ --r: 300deg; }
+.clk .no11{ --r: 330deg; }
+
+.no{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.clk::after{
+    content : '';
+    position: absolute;
+    background-color:  black;
+    z-index: 111;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+/* ============ hands ============ */
+.main{
+    /* border: 2px solid black; */
+    position: relative;
+}
+.hand{
+    position: absolute;
+    border-radius: 8px;
+    transform-origin: bottom;
+}
+#hr{
+    /* border: 3px solid rgba(0, 0, 0, 0.945); */
+    /* position: absolute; */
+    background-color: rgba(0, 0, 0, 0.788);
+    height:20%;
+    width: 3%;
+    top: 30.5%;
+    left: 48.55%;
+    z-index: 4;
+}
+#min{
+    /* border: 3px solid rgba(0, 0, 0, 0.945); */
+    /* position: absolute; */
+    background-color: rgba(54, 54, 54, 0.938);
+    height:30%;
+    width: 2%;
+    top: 20%;
+    left: 49%;
+    z-index: 5;
+}
+#sec{
+    /* border: 3px solid rgba(0, 0, 0, 0.945); */
+    /* position: absolute; */
+    background-color: rgba(255, 0, 0, 0.637);
+    height: 33%;
+    width: 0.3%;
+    top: 50.5px;
+    left: 49.9%;
+    z-index: 6;
+
+}
