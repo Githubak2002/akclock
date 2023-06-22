@@ -14,6 +14,17 @@ body{
     background: linear-gradient(35deg, rgb(98, 177, 255), rgba(80, 57, 255, 0.795),rgba(230, 70, 230, 0.926));
     
 }
+
+.head{
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+    position: absolute;
+    top: 6%;
+    right: 36.6%;
+}
+
+
 .clk{
     height: 300px;
     width: 300px;
